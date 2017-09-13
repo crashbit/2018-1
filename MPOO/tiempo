@@ -1,0 +1,11 @@
+import Foundation
+
+let date = Date()// Aug 25, 2017, 11:55 AM
+let calendar = Calendar.current
+
+let hour = calendar.component(.hour, from: date) //11
+let minute = calendar.component(.minute, from: date) //55
+let sec = calendar.component(.second, from: date) //33
+let nanosec = calendar.component(.nanosecond, from: date) //6 (Friday) 
+
+print(hour,minute, sec,nanosec)
